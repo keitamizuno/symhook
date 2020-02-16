@@ -1,5 +1,5 @@
 # Symhook
-<img src="https://github.com/keitamizuno/symhook/blob/images/symhook_logo.png" width="80px" align="left" ><br>Symhook is incoming webhook of [Symphony](https://symphony.com/). <br>
+<img src="https://github.com/keitamizuno/symhook/blob/images/symhook_logo.png" width="80px" align="left" >Symhook is incoming webhook of [Symphony](https://symphony.com/). <br>
 You can integrate with any app which has a notification function or you can write http request in your app and integrate it.
 
 # Demo
