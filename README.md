@@ -4,10 +4,10 @@ You can integrate with any app which has a notification function or you can writ
 
 # Demo
 
-1. Add Symhook service account to any room in which you want get notification from integrated app.
-2. Send message `/webhook` and get a webhook url from Symhook.
+1. Add a Symhook service account to any room in which you want to get notification from an integrated app.
+2. Send a message `/webhook` and get a webhook URL from Symhook.
 <img src="https://github.com/keitamizuno/symhook/blob/images/symhook_url.gif"><br>
-3. Copy the url and paste it to notification setting page of a app you want to integrate.<br>
+3. Copy the URL and paste it to notification setting page of an app you want to integrate.<br>
    *Choose Slack in Type.<br>
    e.g.) This is notification setting page in [Grafana](https://grafana.com/grafana/)<br>
 <img src="https://github.com/keitamizuno/symhook/blob/images/symhook_integration_setting.png"><br>
@@ -18,7 +18,7 @@ You can integrate with any app which has a notification function or you can writ
 
 # Installation & Usage
 
-1. You can pull [Symhook docker image](https://hub.docker.com/r/keitamizuno/symhook) using following command. <br>
+1. You can pull [Symhook docker image](https://hub.docker.com/r/keitamizuno/symhook) using the following command. <br>
 `docker pull keitamizuno/symhook`
 2. Symhook works as a Symphony bot so do what you need to do when you create Symphony bots. <br>
    - Create a service account for Symhook in your Symphony pod. <br>
@@ -46,15 +46,15 @@ You can integrate with any app which has a notification function or you can writ
 
 # Note
 
-## Integration with apps which has notification function.
+## Integration with apps that have notification function.
 There are many apps can send a notification message to chat apps by REST API.<br>
 In integration or notification setting page of those, you can choose what type of chat (or mail) app to send.<br>
-Most of cases, you can find Slack type (since Slack is the one of most popular chat application) and choose it.<br><br>
+Most of the cases, you can find Slack type (since Slack is the one of most popular chat application) and choose it.<br><br>
 Symhook converts [Slack format](https://api.slack.com/reference/surfaces/formatting) messages to Symphony format ([MessageML Format](https://developers.symphony.com/symphony-developer/docs/messagemlv2)) and sends the converted message to Symphony pod. <br>
-*However, not all of Slack format are supported. I will add a list of what is supported and not supported.
+*However, not all of the Slack format are supported. I will add a list of what is supported and not supported.
 ## Integration with apps you created.
 
-If you want to integrate apps you created you can just write HTTP request in your code. <br><br>
+If you want to integrate apps you created you can just write HTTP requests in your code. <br><br>
 - Header <br>
   `"Content-Type" : "application/json"`
 - Body - You can write anything as [MessageML Format](https://developers.symphony.com/symphony-developer/docs/messagemlv2)<br>
@@ -63,8 +63,8 @@ If you want to integrate apps you created you can just write HTTP request in you
   ```
   {
       "text" : "<card iconSrc="url" accent="tempo-bg-color--blue">
-	                <header>Card Header. Always visible.</header>
-	                <body>Card Body. User must click to view it.</body>
+                  <header>Card Header. Always visible.</header>
+                  <body>Card Body. User must click to view it.</body>
                 </card>"
   }
   ```
