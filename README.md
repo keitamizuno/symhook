@@ -1,15 +1,20 @@
 # Symhook
-
-Symhook is incoming webhook of [Symphony](https://symphony.com/). <br>
+<img src="https://github.com/keitamizuno/symhook/blob/images/symhook_logo.png" width="80px" align="left" ><br>Symhook is incoming webhook of [Symphony](https://symphony.com/). <br>
 You can integrate with any app which has a notification function or you can write http request in your app and integrate it.
 
 # Demo
 
 1. Add Symhook service account to any room in which you want get notification from integrated app.
 2. Send message `/webhook` and get a webhook url from Symhook.
-3. Copy the url and paste it to notification setting page of a app you want to integrate.
-   * Choose Slack as Type.
-4. That's it! Just wait for notifications.
+<img src="https://github.com/keitamizuno/symhook/blob/images/symhook_url.gif"><br>
+3. Copy the url and paste it to notification setting page of a app you want to integrate.<br>
+   *Choose Slack in Type.<br>
+   e.g.) This is notification setting page in [Grafana](https://grafana.com/grafana/)<br>
+<img src="https://github.com/keitamizuno/symhook/blob/images/symhook_integration_setting.png"><br>
+
+
+4. That's it! Just wait for notifications.<br>
+<img src="https://github.com/keitamizuno/symhook/blob/images/symhook_notification.png"><br>
 
 # Installation & Usage
 
